@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TaskFlow | To-Do List</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="app-container">
+      <!-- Header -->
+      <header class="app-header">
+        <div>
+          <p class="subtitle">STAY ORGANIZED</p>
+          <h1>TaskFlow</h1>
+
+          <p class="description">Organize your tasks and get things done.</p>
+        </div>
+
+        <div class="task-counter">
+          <span id="completedCount">0</span>
+          /
+          <span id="totalCount">0</span>
+          completed
+        </div>
+      </header>
+
+      <!-- Add Task -->
+      <section class="add-task-section">
+        <form id="taskForm">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="What do you need to do?"
+            autocomplete="off"
+          />
+
+          <button type="submit">+ Add Task</button>
+        </form>
+      </section>
+
+      <!-- Controls -->
+      <section class="controls">
+        <input type="text" id="searchInput" placeholder="Search tasks..." />
+
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+
+          <button class="filter-btn" data-filter="active">Active</button>
+
+          <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+      </section>
+
+      <!-- Task List -->
+      <section class="tasks-section">
+        <ul id="taskList">
+          <!-- Tasks will be created with JavaScript -->
+        </ul>
+
+        <div id="emptyState" class="empty-state">
+          <div class="empty-icon">✓</div>
+
+          <h3>No tasks yet</h3>
+
+          <p>Add your first task to get started.</p>
+        </div>
+
+        <div class="task-footer">
+          <span id="remainingCount"> 0 tasks remaining </span>
+
+          <button id="clearCompletedBtn">Clear Completed</button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="app-footer">
+        <p>Built with HTML, CSS & JavaScript</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
