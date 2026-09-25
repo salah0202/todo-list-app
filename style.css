@@ -447,3 +447,19 @@ body {
         align-items: flex-start;
     }
 }
+
+/* Validation Message */
+
+.task-message {
+    min-height: 20px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.task-message.error {
+    color: #dc3545;
+}
+
+.task-message.success {
+    color: #198754;
+}
